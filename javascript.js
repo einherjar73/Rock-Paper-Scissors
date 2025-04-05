@@ -82,13 +82,12 @@ function playRound(humanChoice, computerChoice) {
       result.style.color = "#0f0";
     }
 
-    
     getScoreBoard();
   } else if (humanChoice === computerChoice) {
-    if (document.documentElement.lang == "ka"){
-      result.textContent = 'ფრე';
+    if (document.documentElement.lang == "ka") {
+      result.textContent = "ფრე";
     } else {
-     result.textContent = `Tie`;
+      result.textContent = `Tie`;
     }
     result.style.color = "black";
   } else {
@@ -97,8 +96,8 @@ function playRound(humanChoice, computerChoice) {
 }
 
 reset.addEventListener("click", () => {
-  if (document.documentElement.lang == "ka"){
-    scoreBoard.textContent = 'შენ 0 - 0 კომპიუტერი'
+  if (document.documentElement.lang == "ka") {
+    scoreBoard.textContent = "შენ 0 - 0 კომპიუტერი";
   } else {
     scoreBoard.textContent = "You 0 - 0 Computer";
   }
