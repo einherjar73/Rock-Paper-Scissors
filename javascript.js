@@ -101,6 +101,9 @@ reset.addEventListener("click", () => {
   } else {
     scoreBoard.textContent = "You 0 - 0 Computer";
   }
+
+  humanScore = 0;
+  computerScore = 0;
   result.textContent = "...";
   result.style.color = "black";
 });
